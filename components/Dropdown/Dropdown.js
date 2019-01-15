@@ -16,12 +16,12 @@ class Dropdown {
   toggleContent() {
     // Toggle the ".dropdown-hidden" class off and on
     this.content.classList.toggle("dropdown-hidden");
-    // const drop = document.querySelector(".dropdown-content");
-    // if (this.content.classList.contains("dropdown-hidden")) {
-    //   TweenMax.to(drop, 1, { top: -350 });
-    // } else {
-    //   TweenMax.to(drop, 1, { top: 60 });
-    // }
+    const drop = document.querySelector(".dropdown-content");
+    if (this.content.classList.contains("dropdown-hidden")) {
+      TweenMax.to(drop, 1, { top: -350 });
+    } else {
+      TweenMax.to(drop, 1, { top: 60 });
+    }
   }
 }
 
